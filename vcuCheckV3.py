@@ -16,7 +16,7 @@ def sendEmail():
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("vcuclasschecker", "vcusefisk123") #"email","pass" (no @gmail)
+        server.login("username", "password") #"email","pass" (no @gmail)
 	SUBJECT = "" + semid +" Semester Class Registration"
         MSG = "" + yunm + ",\n We were able to successfully on registering " + subid +" " + subidn + " for the " + semid +" semester.\n"
         message = 'Subject: %s\n\n%s' % (SUBJECT, MSG)
